@@ -18,9 +18,9 @@ class Command(CeleryCommand):
     else:
         preload_options = []
     preload_options = base.preload_options if base.preload_options else []
-    options = (cc_options +
-               base_options +
-               preload_options)
+    #options = (cc_options +
+    #           base_options +
+    #           preload_options)
 
     def run_from_argv(self, argv):
         argv = self.handle_default_options(argv)
